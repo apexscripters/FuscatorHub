@@ -1,163 +1,248 @@
-local function _a97603f87(s)local r=""local i=1 while i<#s do local a=tonumber(s:sub(i,i+1),16) r=r..string.char(((a-13)%256*183)%256) i=i+2 end return r end
-local _825a17d="Apex Scripters"
-local _e8e366=66 local _5763ec=389 local _d7ed54=411 local function _be9f0bec(_3704b,_638d3)local _e8ce4=_3704b+_638d3 if _e8ce4>_d7ed54 then return _e8ce4-_d7ed54 else return _e8ce4 end end local _80ad47=_be9f0bec(_e8e366,_5763ec) local _e5be8b=585 local _cf870a=691 local _390874=322 local function _be00f9ce(_5ee04,_4f4a8)local _ff55b=_5ee04+_4f4a8 if _ff55b>_390874 then return _ff55b-_390874 else return _ff55b end end local _7ffba3=_be00f9ce(_e5be8b,_cf870a) local _f14b03=418 local _893b99=202 local _8ca6d2=109 local function _3713a8e6(_a4856,_6e99f)local _958b2=_a4856+_6e99f if _958b2>_8ca6d2 then return _958b2-_8ca6d2 else return _958b2 end end local _bfb7f3=_3713a8e6(_f14b03,_893b99) local _a09c76=765 local _d7ac58=323 local _fca3e6=160 local function _e81cfc85(_329b6,_7db1f)local _ba9bc=_329b6+_7db1f if _ba9bc>_fca3e6 then return _ba9bc-_fca3e6 else return _ba9bc end end local _772569=_e81cfc85(_a09c76,_d7ac58) local _920501=36 local _1155bd=59 local _ca45e2=318 local function _82f56065(_75da6,_30a23)local _4b266=_75da6+_30a23 if _4b266>_ca45e2 then return _4b266-_ca45e2 else return _4b266 end end local _5fbe3c=_82f56065(_920501,_1155bd) local _32fbf3=603 local _fe82f1=238 local _14a3ba=387 local function _9c552436(_2864e,_d6b4f)local _a05b7=_2864e+_d6b4f if _a05b7>_14a3ba then return _a05b7-_14a3ba else return _a05b7 end end local _2390d4=_9c552436(_32fbf3,_fe82f1)
-do local _08e84f=0 while _08e84f==0 do _08e84f=1
-local _fb9172f=game:GetService(_a97603f87("3d01b45cd02b32"))
-local LocalPlayer=_fb9172f.LocalPlayer
-local _333a4fb=game:GetService(_a97603f87("59d001d01d162b3952d02b47ecc2d0"))
-local _9430efa=game:GetService(_a97603f87("4b400f52d02b47ecc2d0"))
-local _964d98b=game:GetService(_a97603f87("0539391d52d02b47ecc2d0"))
-local _c7fb500=game:GetService(_a97603f87("21ecdee539ec0fde"))
-local _9b9555c=game:GetService(_a97603f87("6e162bfa321db4c2d0"))
-local _51b26fe=game:GetService(_a97603f87("6032d02b0c0f1d403952d02b47ecc2d0"))
-local _fc77b07=game:GetService(_a97603f87("4bd01d01ecc2b439d0c95239162bb4ded0"))
-local _973d564=game:GetService(_a97603f87("67ec2b3940b4016032d02b"))
-local _ebaf35b=settings()LocalPlayer.Idled:Connect(function()_973d564:CaptureController()_973d564:ClickButton2(Vector2.new())
-end)task.spawn(function()
-while task.wait((0x40e-0x40d))
+local function _0fd74c326(s)local r=""local i=1 while i<#s do local a=tonumber(s:sub(i,i+1),16) r=r..string.char(((a-13)%256*183)%256) i=i+2 end return r end
+local _15c5ad=261 local _78ecad=892 local _88924b=59 local function _d08368c7(_1d1b7,_6b20e)local _ac2da=_1d1b7+_6b20e if _ac2da>_88924b then return _ac2da-_88924b else return _ac2da end end local _8f4d8b=_d08368c7(_15c5ad,_78ecad) local _484898=7 local _25c639=582 local _c6dcbc=131 local function _c922379c(_58968,_e7a41)local _27b0e=_58968+_e7a41 if _27b0e>_c6dcbc then return _27b0e-_c6dcbc else return _27b0e end end local _3e4a8c=_c922379c(_484898,_25c639) local _e970d0=764 local _5cd157=500 local _2942a9=340 local function _14126a36(_0e72a,_8ed44)local _f2918=_0e72a+_8ed44 if _f2918>_2942a9 then return _f2918-_2942a9 else return _f2918 end end local _f17aae=_14126a36(_e970d0,_5cd157) local _e57c04=607 local _e2be59=874 local _c319de=200 local function _3ae902b3(_1a968,_0229c)local _04b17=_1a968+_0229c if _04b17>_c319de then return _04b17-_c319de else return _04b17 end end local _652aec=_3ae902b3(_e57c04,_e2be59) local _773f90=632 local _7ff93c=201 local _d8d5a3=416 local function _6cb1d8b3(_2640b,_3a40d)local _fceed=_2640b+_3a40d if _fceed>_d8d5a3 then return _fceed-_d8d5a3 else return _fceed end end local _6fb24d=_6cb1d8b3(_773f90,_7ff93c) local _b4febb=10 local _a4f3ef=170 local _c76797=242 local function _c0b322ab(_a11f7,_ac2c7)local _801d8=_a11f7+_ac2c7 if _801d8>_c76797 then return _801d8-_c76797 else return _801d8 end end local _6a32db=_c0b322ab(_b4febb,_a4f3ef)
+do local _e07097=0 while _e07097==0 do _e07097=1
+local function _3b86031(_bae9a30)
+local _ce1d03f=_0fd74c326("")
+local _9a3013b=(0x0+0x1)
+while _9a3013b<#_bae9a30
 do
-local _8ed2747=_fb9172f:GetPlayers()
-for _9a69464=(0x2ec-0x2eb),#_8ed2747
+local _b1e08e3=tonumber(_bae9a30:sub(_9a3013b,_9a3013b+(0x71a-0x719)),(0x46*0x1-0x36))_ce1d03f=_ce1d03f..string.char(((_b1e08e3-(0x2ae-0x2a1))%(0xeb+0x15)*(0x53e-0x487))%(0x623-0x523))_9a3013b=_9a3013b+(0x0+0x2)
+end
+return _ce1d03f
+end
+local _bc5adac=_0fd74c326("d41dd055ed52c22bec1d39d02b32")
+local _c6fb86a=(0x39*0x2-0x30)
+local _de3cc4c=(0x160+0x25)
+local _5f95336=(0x15c+0x3f)
+local function _5b14173(_df68a45,_a631364)
+local _0b23b0c=_df68a45+_a631364
+if _0b23b0c>_5f95336 then
+return _0b23b0c-_5f95336
+else
+return _0b23b0c
+end
+end
+local _7694a46=_5b14173(_c6fb86a,_de3cc4c)
+local _b4b3509=(0x3b*0xa-0x5)
+local _63f5e62=(0x1f*0x17-0x16)
+local _60ac081=(0x2a1-0x15f)
+local function _d6064e7(_51f9265,_ac03562)
+local _fe4d4bf=_51f9265+_ac03562
+if _fe4d4bf>_60ac081 then
+return _fe4d4bf-_60ac081
+else
+return _fe4d4bf
+end
+end
+local _65d3e4b=_d6064e7(_b4b3509,_63f5e62)
+local _bdd24ee=(0x4e*0x6-0x32)
+local _1ad9e3c=(0x97+0x33)
+local _15245a7=(0x10+0x5d)
+local function _7ee288b(_b34a35f,_b913109)
+local _23f5a6c=_b34a35f+_b913109
+if _23f5a6c>_15245a7 then
+return _23f5a6c-_15245a7
+else
+return _23f5a6c
+end
+end
+local _fdc1c37=_7ee288b(_bdd24ee,_1ad9e3c)
+local _e36df73=(0x12*0x2b-0x9)
+local _d9354ea=(0x661-0x51e)
+local _336422e=(0x4fa-0x45a)
+local function _d794ab5(_59c6458,_969dd47)
+local _4f88f65=_59c6458+_969dd47
+if _4f88f65>_336422e then
+return _4f88f65-_336422e
+else
+return _4f88f65
+end
+end
+local _3e191c6=_d794ab5(_e36df73,_d9354ea)
+local _66779df=(0x15+0xf)
+local _628190a=(0x7d9-0x79e)
+local _2c3b490=(0xfe+0x40)
+local function _70c8851(_ab69ffe,_252f1b2)
+local _81c8984=_ab69ffe+_252f1b2
+if _81c8984>_2c3b490 then
+return _81c8984-_2c3b490
+else
+return _81c8984
+end
+end
+local _9602d22=_70c8851(_66779df,_628190a)
+local _07d6caa=(0x1e*0x15-0x1b)
+local _525d313=(0x3f*0x4-0xe)
+local _4d53dfb=(0x78b-0x608)
+local function _706e943(_d05d7ba,_fb6cfde)
+local _3027eec=_d05d7ba+_fb6cfde
+if _3027eec>_4d53dfb then
+return _3027eec-_4d53dfb
+else
+return _3027eec
+end
+end
+local _48be3d8=_706e943(_07d6caa,_525d313)
+do
+local _b27c2ed=(0x0+0x0)
+while _b27c2ed==(0x0+0x0)
+do _b27c2ed=(0x368-0x367)
+local _b1fe535=game:GetService(_3b86031(_0fd74c326("72c95d64bb7980c2c95d6bbb726b")))
+local LocalPlayer=_b1fe535.LocalPlayer
+local _30c8573=game:GetService(_3b86031(_0fd74c326("809cc95d5d64c95d64c964876bbb729c806bc95d6bbb798ed0c2c26bc95d")))
+local _6c4b319=game:GetService(_3b86031(_0fd74c326("79bb795d5dd7806bc95d6bbb798ed0c2c26bc95d")))
+local _870b0bc=game:GetService(_3b86031(_0fd74c326("5d80729c729c64c9806bc95d6bbb798ed0c2c26bc95d")))
+local _654755d=game:GetService(_3b86031(_0fd74c326("6b64d0c2c9d0d080729cd0c25dd7c9d0")))
+local _ac195d3=game:GetService(_3b86031(_0fd74c326("87d064876bbbd7b4726b64c9bb79c26bc95d")))
+local _b170b64=game:GetService(_3b86031(_0fd74c326("875d726bc95d6bbb5dc25dd764c9795d729c806bc95d6bbb798ed0c2c26bc95d")))
+local _1a5306c=game:GetService(_3b86031(_0fd74c326("79bbc95d64c95d64d0c2c26bbb79729cc95dc29c806b729c64876bbbbb79c9d0c95d")))
+local _33a4652=game:GetService(_3b86031(_0fd74c326("878ed0c26bbb729c795dbb795d64875d726bc95d6bbb")))
+local _0878b9b=settings()LocalPlayer.Idled:Connect(function()_33a4652:CaptureController()_33a4652:ClickButton2(Vector2.new())
+end)task.spawn(function()
+while task.wait(((0xa5d-0x64f)-(0x52a-0x11d)))
+do
+local _2893937=_b1fe535:GetPlayers()
+for _f06eaeb=((0x2f1-0x5)-(0x2fd-0x12)),#_2893937
 do pcall(function()
-local _72e5f29=_8ed2747[_9a69464]
-local _f3ed000=_72e5f29:FindFirstChild(_a97603f87("e5ecc9d03dd03932"))
-if _f3ed000 and _f3ed000:IsA(_a97603f87("db16160167b40140d0"))then
-if _f3ed000.Value==false then _f3ed000.Value=true
+local _a9fd2cb=_2893937[_f06eaeb]
+local _23552d6=_a9fd2cb:FindFirstChild(_3b86031(_0fd74c326("d080d0c2c29cc95d72c9c95d729c726b")))
+if _23552d6 and _23552d6:IsA(_3b86031(_0fd74c326("c9bb648764875d64878ebb795d64795dc95d")))then
+if _23552d6.Value==false then _23552d6.Value=true
 end
 end
 end)
 end
 end
 end)
-local function _ab24816(_ad1e63c)
-if _ad1e63c:IsA(_a97603f87("dbb432d03db42b39"))or _ad1e63c:IsA(_a97603f87("28d032e53db42b39"))or _ad1e63c:IsA(_a97603f87("600fec160f361dd02bb439ec160f"))then _ad1e63c.Material=Enum.Material.Plastic _ad1e63c.Reflectance=(0x0+0x0)_ad1e63c.CastShadow=false
-elseif _ad1e63c:IsA(_a97603f87("3db42b39ecc201d0f008ec3939d02b"))or _ad1e63c:IsA(_a97603f87("592bb4ec01"))or _ad1e63c:IsA(_a97603f87("dbd0b408"))or _ad1e63c:IsA(_a97603f87("f7ec2bd0"))or _ad1e63c:IsA(_a97603f87("520816fad0"))or _ad1e63c:IsA(_a97603f87("521db42bfa01d032"))then _ad1e63c.Enabled=false
-elseif _ad1e63c:IsA(_a97603f87("e9d0c2b401"))or _ad1e63c:IsA(_a97603f87("59d05539402bd0"))then _ad1e63c.Transparency=(0x1e*0x1-0x1d)
+local function _9786535(_77ab174)
+if _77ab174:IsA(_3b86031(_0fd74c326("c9bbbb79726bc95d72c9bb796bbb729c")))or _77ab174:IsA(_3b86031(_0fd74c326("6b95c95d726bd08072c9bb796bbb729c")))or _77ab174:IsA(_3b86031(_0fd74c326("875d5dd7d0c264875dd7728764c9c95d6bbbbb79729cd0c264875dd7")))then _77ab174.Material=Enum.Material.Plastic _77ab174.Reflectance=((0x0+0x0)+(0x0+0x0))_77ab174.CastShadow=false
+elseif _77ab174:IsA(_3b86031(_0fd74c326("72c9bb796bbb729cd0c2c26b5d64c95dd75d5d95d0c2729c729cc95d6bbb")))or _77ab174:IsA(_3b86031(_0fd74c326("809c6bbbbb79d0c25d64")))or _77ab174:IsA(_3b86031(_0fd74c326("c9bbc95dbb795d95")))or _77ab174:IsA(_3b86031(_0fd74c326("d78ed0c26bbbc95d")))or _77ab174:IsA(_3b86031(_0fd74c326("806b5d956487d7b4c95d")))or _77ab174:IsA(_3b86031(_0fd74c326("806b64c9bb796bbbd7b45d64c95d726b")))then _77ab174.Enabled=false
+elseif _77ab174:IsA(_3b86031(_0fd74c326("d09cc95dc26bbb795d64")))or _77ab174:IsA(_3b86031(_0fd74c326("809cc95d8080729c795d6bbbc95d")))then _77ab174.Transparency=((0x635-0x617)*(0x61-0x60)-(0xd+0x10))
 end
 end
-local function _a253b53()_ebaf35b.Rendering.QualityLevel=Enum.QualityLevel.Level01 _c7fb500.GlobalShadows=false _c7fb500.Brightness=(0x7c/0xf8)_c7fb500.ClockTime=(0x932/0x1ac)_c7fb500.EnvironmentDiffuseScale=(0x0+0x0)_c7fb500.EnvironmentSpecularScale=(0x0+0x0)
-if _c7fb500:FindFirstChild(_a97603f87("52fa5c"))then _c7fb500.Sky:Destroy()
+local function _9fa0e8c()_0878b9b.Rendering.QualityLevel=Enum.QualityLevel.Level01 _654755d.GlobalShadows=false _654755d.Brightness=((0x5c+0x20)/(0x4b*0x4-0x34))_654755d.ClockTime=((0xe*0xa9-0xc)/(0x57+0x155))_654755d.EnvironmentDiffuseScale=((0x0+0x0)+(0x0+0x0))_654755d.EnvironmentSpecularScale=((0x0+0x0)+(0x0+0x0))
+if _654755d:FindFirstChild(_3b86031(_0fd74c326("806bd7b480c2")))then _654755d.Sky:Destroy()
 end
-for _2244479,_0294754 in pairs(_9b9555c:GetDescendants())
-do _ab24816(_0294754)
+for _c9cb5f2,_d933f3b in pairs(_ac195d3:GetDescendants())
+do _9786535(_d933f3b)
 end
-end _a253b53()_9b9555c.DescendantAdded:Connect(_ab24816)
-local _a2c9402=LocalPlayer:WaitForChild(_a97603f87("3d01b45cd02bfe40ec"))
-local function _662017b(_e170ec7)
-if _e170ec7:IsA(_a97603f87("59d0553921b4bbd001"))or _e170ec7:IsA(_a97603f87("0c08b4ded021b4bbd001"))or _e170ec7:IsA(_a97603f87("f72bb408d0"))then
-if _e170ec7.Name==_a97603f87("d41dd0551aec0101fe600c")or _e170ec7:IsDescendantOf(_a2c9402:FindFirstChild(_a97603f87("d41dd0551aec0101fe600c")))then
+end _9fa0e8c()_ac195d3.DescendantAdded:Connect(_9786535)
+local _8736ef8=LocalPlayer:WaitForChild(_3b86031(_0fd74c326("72c95d64bb7980c2c95d6bbbd7d0795dd0c2")))
+local function _29e312a(_2e0aeb0)
+if _2e0aeb0:IsA(_3b86031(_0fd74c326("809cc95d8080729c6b64bb79bbbbc95d5d64")))or _2e0aeb0:IsA(_3b86031(_0fd74c326("5dc25d95bb79c9d0c95d6b64bb79bbbbc95d5d64")))or _2e0aeb0:IsA(_3b86031(_0fd74c326("d78e6bbbbb795d95c95d")))then
+if _2e0aeb0.Name==_3b86031(_0fd74c326("c97964c9c95d808064b4d0c25d645d64d7d0875d5dc2"))or _2e0aeb0:IsDescendantOf(_8736ef8:FindFirstChild(_3b86031(_0fd74c326("c97964c9c95d808064b4d0c25d645d64d7d0875d5dc2"))))then
 return
 end
-local _73e7651=_e170ec7.Name:lower()
-local _d0e80a5=_e170ec7:IsA(_a97603f87("59d0553921b4bbd001"))and _e170ec7.Text:lower()or _a97603f87("")
-if _73e7651:match(_a97603f87("d72bb408d009"))or _73e7651:find(_a97603f87("1d4032e5"))or _73e7651:find(_a97603f87("deb4ec0f"))or _73e7651:find(_a97603f87("1d161d401d"))or _73e7651:find(_a97603f87("c201160fd0"))or _73e7651:find(_a97603f87("0f1639ecd7ecc2b439ec160f"))or _d0e80a5:find(_a97603f87("c9402bb4bbec01ecc9b4c9d0"))or _d0e80a5:find(_a97603f87("c9402bb4bbec01ec395c"))or _d0e80a5:find(_a97603f87("3a"))or _d0e80a5:find(_a97603f87("faec0101"))or _d0e80a5:find(_a97603f87("deb40fe51640"))then _e170ec7.Visible=false
-if _e170ec7:IsA(_a97603f87("59d0553921b4bbd001"))then _e170ec7.TextTransparency=(0x7b7-0x7b6)
+local _f896d0e=_2e0aeb0.Name:lower()
+local _8875110=_2e0aeb0:IsA(_3b86031(_0fd74c326("809cc95d8080729c6b64bb79bbbbc95d5d64")))and _2e0aeb0.Text:lower()or _3b86031(_0fd74c326(""))
+if _f896d0e:match(_3b86031(_0fd74c326("c98e6bbbbb795d95c95d5d9c")))or _f896d0e:find(_3b86031(_0fd74c326("64c9795d726bd080")))or _f896d0e:find(_3b86031(_0fd74c326("c9d0bb79d0c25dd7")))or _f896d0e:find(_3b86031(_0fd74c326("64c9648764c9795d64c9")))or _f896d0e:find(_3b86031(_0fd74c326("c26b5d6464875dd7c95d")))or _f896d0e:find(_3b86031(_0fd74c326("5dd76487729cd0c2c98ed0c2c26bbb79729cd0c264875dd7")))or _8875110:find(_3b86031(_0fd74c326("c29c795d6bbbbb79bbbbd0c25d64d0c2c29cbb79c29cc95d")))or _8875110:find(_3b86031(_0fd74c326("c29c795d6bbbbb79bbbbd0c25d64d0c2729c80c2")))or _8875110:find(_3b86031(_0fd74c326("72b4")))or _8875110:find(_3b86031(_0fd74c326("d7b4d0c25d645d64")))or _8875110:find(_3b86031(_0fd74c326("c9d0bb795dd7d0806487795d")))then _2e0aeb0.Visible=false
+if _2e0aeb0:IsA(_3b86031(_0fd74c326("809cc95d8080729c6b64bb79bbbbc95d5d64")))then _2e0aeb0.TextTransparency=((0x2a5+0x512)-(0x358+0x45e))
 end
-if _e170ec7:IsA(_a97603f87("0c08b4ded021b4bbd001"))then _e170ec7.ImageTransparency=(0x4b*0x1-0x4a)
-end
-end
+if _2e0aeb0:IsA(_3b86031(_0fd74c326("5dc25d95bb79c9d0c95d6b64bb79bbbbc95d5d64")))then _2e0aeb0.ImageTransparency=((0x3aa-0x35f)*(0x0+0x1)-(0x2e2-0x298))
 end
 end
-for _8b75009,_10cf729 in pairs(_a2c9402:GetDescendants())
-do _662017b(_10cf729)
-end _a2c9402.DescendantAdded:Connect(_662017b)
-if _a2c9402:FindFirstChild(_a97603f87("d41dd0551aec0101fe600c"))then _a2c9402[_a97603f87("d41dd0551aec0101fe600c")]:Destroy()
 end
-local _a36f988=Instance.new(_a97603f87("52c22bd0d00ffe40ec"))_a36f988.Name=_a97603f87("d41dd0551aec0101fe600c")_a36f988.ResetOnSpawn=false _a36f988.AutoLocalize=false _a36f988.Parent=_a2c9402
-local _e57b1b1=Instance.new(_a97603f87("f72bb408d0"))_e57b1b1.Size=UDim2.new((0x0+0x0),(0x69+0x4b),(0x0+0x0),(0x8f-0x2b))_e57b1b1.Position=UDim2.new((0x0+0x0),(0x5a*0x1-0x41),(0x0+0x0),(0x7+0x1c))_e57b1b1.BackgroundColor3=Color3.fromRGB((0x0+0xf),(0x7+0x8),(0x270-0x257))_e57b1b1.BorderSizePixel=(0x0+0x0)_e57b1b1.Parent=_a36f988
-local _d44f9cd=Instance.new(_a97603f87("600c52392b16fad0"))_d44f9cd.Parent=_e57b1b1 _d44f9cd.Thickness=(0x61*0x1-0x5d)_d44f9cd.ApplyStrokeMode=Enum.ApplyStrokeMode.Border _9430efa.RenderStepped:Connect(function()_d44f9cd.Color=Color3.fromHSV(tick()%(0x4f7-0x4f3)/(0x4+0x0),(0x5a5-0x5a4),(0x0+0x1))
+end
+for _d57dd63,_f074ae5 in pairs(_8736ef8:GetDescendants())
+do _29e312a(_f074ae5)
+end _8736ef8.DescendantAdded:Connect(_29e312a)
+if _8736ef8:FindFirstChild(_3b86031(_0fd74c326("c97964c9c95d808064b4d0c25d645d64d7d0875d5dc2")))then _8736ef8[_3b86031(_0fd74c326("c97964c9c95d808064b4d0c25d645d64d7d0875d5dc2"))]:Destroy()
+end
+local _5c4513a=Instance.new(_3b86031(_0fd74c326("806bc26b6bbbc95dc95d5dd7d7d0795dd0c2")))_5c4513a.Name=_3b86031(_0fd74c326("c97964c9c95d808064b4d0c25d645d64d7d0875d5dc2"))_5c4513a.ResetOnSpawn=false _5c4513a.AutoLocalize=false _5c4513a.Parent=_8736ef8
+local _34ae73a=Instance.new(_3b86031(_0fd74c326("d78e6bbbbb795d95c95d")))_34ae73a.Size=UDim2.new(((0x0+0x0)+(0x0+0x0)),((0x46+0x23)+(0x40+0xb)),((0x0+0x0)+(0x0+0x0)),((0x84+0xb)-(0x49*0x1-0x1e)))_34ae73a.Position=UDim2.new(((0x0+0x0)+(0x0+0x0)),((0x42+0x18)*(0x1+0x0)-(0x0+0x41)),((0x0+0x0)+(0x0+0x0)),((0x40*0x1-0x39)+(0x7+0x15)))_34ae73a.BackgroundColor3=Color3.fromRGB(((0x0+0x0)+(0x24*0x1-0x15)),((0x7+0x0)+(0x5c3-0x5bb)),((0x24*0x12-0x18)-(0x57*0x7-0xa)))_34ae73a.BorderSizePixel=((0x0+0x0)+(0x0+0x0))_34ae73a.Parent=_5c4513a
+local _78aff9c=Instance.new(_3b86031(_0fd74c326("875d5dc2806b729c6bbb6487d7b4c95d")))_78aff9c.Parent=_34ae73a _78aff9c.Thickness=((0x4*0x19-0x3)*(0x0+0x1)-(0x24+0x39))_78aff9c.ApplyStrokeMode=Enum.ApplyStrokeMode.Border _6c4b319.RenderStepped:Connect(function()_78aff9c.Color=Color3.fromHSV(tick()%((0x63a-0x143)-(0x3a*0x16-0x9))/((0x258-0x254)+(0x0+0x0)),((0x305+0x2a0)-(0x5b*0x10-0xc)),((0x0+0x0)+(0x3a*0x1-0x39)))
 end)
-local _800e3db=Instance.new(_a97603f87("59d0553921b4bbd001"))_800e3db.Size=UDim2.new((0x0+0x0),(0x3b*0x2-0x8),(0x0+0x0),(0xc+0xd))_800e3db.Position=UDim2.new((0x0+0x0),(0x45*0x1-0x3b),(0x0+0x0),(0x37b-0x373))_800e3db.BackgroundTransparency=(0x100-0xff)_800e3db.AutoLocalize=false _800e3db.Text=_a97603f87("d41dd055ed1aec0101")_800e3db.TextColor3=Color3.fromRGB((0x562-0x463),(0x2f*0x6-0x1b),(0x8d+0x72))_800e3db.TextSize=(0x563-0x553)_800e3db.Font=Enum.Font.GothamBold _800e3db.TextXAlignment=Enum.TextXAlignment.Left _800e3db.Parent=_e57b1b1
-local _7f40567=Instance.new(_a97603f87("59d0553921b4bbd001"))_7f40567.Size=UDim2.new((0x0+0x0),(0x608-0x5cc),(0x0+0x0),(0x73c-0x723))_7f40567.Position=UDim2.new((0x66d-0x66c),-(0x2b*0x2-0x15),(0x0+0x0),(0x7+0x1))_7f40567.BackgroundTransparency=(0x84-0x83)_7f40567.Text=_a97603f87("3d0c2ffea3ed4848ed083253f73d52a3ed4848edf73d52")_7f40567.TextColor3=Color3.fromRGB((0x0+0x0),(0x16*0xb-0x11),(0x116-0xa8))_7f40567.TextSize=(0x5cd-0x5c4)_7f40567.Font=Enum.Font.SourceSansBold _7f40567.TextXAlignment=Enum.TextXAlignment.Right _7f40567.Parent=_e57b1b1
-local _a123805=Instance.new(_a97603f87("59d0553921b4bbd001"))_a123805.Size=UDim2.new((0x0+0x0),(0x37*0x2-0xa),(0x0+0x0),(0xd+0x2))_a123805.Position=UDim2.new((0x0+0x0),(0x2+0x8),(0x0+0x0),(0x5f1-0x5cb))_a123805.BackgroundTransparency=(0x13*0x1-0x12)_a123805.AutoLocalize=false _a123805.Text=_a97603f87("1aec010132a3")_a123805.TextColor3=Color3.fromRGB((0x10a-0x56),(0x662-0x5ae),(0xa7+0xd))_a123805.TextSize=(0x25*0x1-0x18)_a123805.Font=Enum.Font.Gotham _a123805.TextXAlignment=Enum.TextXAlignment.Left _a123805.Parent=_e57b1b1
-local _06546bf=Instance.new(_a97603f87("59d0553921b4bbd001"))_06546bf.Size=UDim2.new((0x0+0x0),(0x33*0x2-0x20),(0x0+0x0),(0x0+0xf))_06546bf.Position=UDim2.new((0x179-0x178),-(0x1e*0x3-0xf),(0x0+0x0),(0xaf-0x89))_06546bf.BackgroundTransparency=(0x9*0x1-0x8)_06546bf.Text=_a97603f87("5d5da35d5d4f5d5d")_06546bf.Font=Enum.Font.SourceSans _06546bf.TextSize=(0x33-0x27)_06546bf.TextColor3=Color3.fromRGB((0x6ef-0x5f0),(0x182-0x83),(0xd+0xf2))_06546bf.TextXAlignment=Enum.TextXAlignment.Right _06546bf.Parent=_e57b1b1
-local _d09107b=Instance.new(_a97603f87("59d0553921b4bbd001"))_d09107b.Size=UDim2.new((0x3e0-0x3df),-(0x5c0-0x5ac),(0x0+0x0),(0x1c+0x2))_d09107b.Position=UDim2.new((0x0+0x0),(0x4+0x6),(0x0+0x0),(0x6+0x34))_d09107b.BackgroundTransparency=(0x50*0x1-0x4f)_d09107b.AutoLocalize=false _d09107b.TextColor3=Color3.fromRGB((0x259-0x15a),(0xfd+0x2),(0x310-0x211))_d09107b.TextSize=(0x0+0x16)_d09107b.Font=Enum.Font.GothamBold _d09107b.TextXAlignment=Enum.TextXAlignment.Left _d09107b.Text=_a97603f87("5ded255d1a2c")_d09107b.Parent=_e57b1b1
-local function _0c12e94(_8a5a790)
-return tostring(_8a5a790):reverse():gsub(_a97603f87("10c910c910c9"),_a97603f87("106441")):reverse():gsub(_a97603f87("9f41"),_a97603f87(""))
+local _09ab7e8=Instance.new(_3b86031(_0fd74c326("809cc95d8080729c6b64bb79bbbbc95d5d64")))_09ab7e8.Size=UDim2.new(((0x0+0x0)+(0x0+0x0)),((0x7e5-0x7aa)*(0x0+0x2)-(0x24d-0x245)),((0x0+0x0)+(0x0+0x0)),((0x459-0x44d)+(0x4e7-0x4da)))_09ab7e8.Position=UDim2.new(((0x0+0x0)+(0x0+0x0)),((0xeb-0xa6)*(0x1+0x0)-(0x6f7-0x6bc)),((0x0+0x0)+(0x0+0x0)),((0xa80-0x705)-(0x5ca-0x257)))_09ab7e8.BackgroundTransparency=((0x199-0x99)-(0xb8+0x47))_09ab7e8.AutoLocalize=false _09ab7e8.Text=_3b86031(_0fd74c326("c97964c9c95d8080d0c964b4d0c25d645d64"))_09ab7e8.TextColor3=Color3.fromRGB(((0x319+0x249)-(0x40*0x12-0x1d)),((0xd+0x22)*(0x49*0x1-0x43)-(0x3cf-0x3b4)),((0x45*0x3-0x42)+(0x2+0x70)))_09ab7e8.TextSize=((0xa1e-0x4bb)-(0x7a5-0x252))_09ab7e8.Font=Enum.Font.GothamBold _09ab7e8.TextXAlignment=Enum.TextXAlignment.Left _09ab7e8.Parent=_34ae73a
+local _2f34174=Instance.new(_3b86031(_0fd74c326("809cc95d8080729c6b64bb79bbbbc95d5d64")))_2f34174.Size=UDim2.new(((0x0+0x0)+(0x0+0x0)),((0x678-0x70)-(0x7aa-0x1de)),((0x0+0x0)+(0x0+0x0)),((0xdbd-0x681)-(0x58*0x15-0x15)))_2f34174.Position=UDim2.new(((0x50*0x15-0x23)-(0x11a+0x552)),-((0x13c-0x111)*(0x4a*0x1-0x48)-(0x8+0xd)),((0x0+0x0)+(0x0+0x0)),((0x2e*0x1-0x27)+(0x1+0x0)))_2f34174.BackgroundTransparency=((0x2d+0x57)-(0x718-0x695))_2f34174.Text=_3b86031(_0fd74c326("72c95dc26bd7d7d0b472d0c979957995d0c95d95726b8072d78e72c9806bb472d0c979957995d0c9d78e72c9806b"))_2f34174.TextColor3=Color3.fromRGB(((0x0+0x0)+(0x0+0x0)),((0x57*0x1-0x41)*(0xa+0x1)-(0x20d-0x1fc)),((0x8b3-0x79d)-(0x80f-0x767)))_2f34174.TextSize=((0x851-0x284)-(0x11c+0x4a8))_2f34174.Font=Enum.Font.SourceSansBold _2f34174.TextXAlignment=Enum.TextXAlignment.Right _2f34174.Parent=_34ae73a
+local _fcdad7e=Instance.new(_3b86031(_0fd74c326("809cc95d8080729c6b64bb79bbbbc95d5d64")))_fcdad7e.Size=UDim2.new(((0x0+0x0)+(0x0+0x0)),((0xa*0x6-0x5)*(0x0+0x2)-(0x115-0x10b)),((0x0+0x0)+(0x0+0x0)),((0x7af-0x7a2)+(0xb*0x1-0x9)))_fcdad7e.Position=UDim2.new(((0x0+0x0)+(0x0+0x0)),((0x55*0x1-0x53)+(0x7+0x1)),((0x0+0x0)+(0x0+0x0)),((0x35*0x1d-0x10)-(0x4b+0x580)))_fcdad7e.BackgroundTransparency=((0x27*0x1-0x14)*(0x0+0x1)-(0x79a-0x788))_fcdad7e.AutoLocalize=false _fcdad7e.Text=_3b86031(_0fd74c326("64b4d0c25d645d64726bb472"))_fcdad7e.TextColor3=Color3.fromRGB(((0xa4+0x66)-(0x1f+0x37)),((0x829-0x1c7)-(0x2b6+0x2f8)),((0x84+0x23)+(0x1b*0x1-0xe)))_fcdad7e.TextSize=((0x103-0xde)*(0x2a0-0x29f)-(0x3d*0x1-0x25))_fcdad7e.Font=Enum.Font.Gotham _fcdad7e.TextXAlignment=Enum.TextXAlignment.Left _fcdad7e.Parent=_34ae73a
+local _bdea0f5=Instance.new(_3b86031(_0fd74c326("809cc95d8080729c6b64bb79bbbbc95d5d64")))_bdea0f5.Size=UDim2.new(((0x0+0x0)+(0x0+0x0)),((0x480-0x44d)*(0x3e*0x1-0x3c)-(0x1a+0x6)),((0x0+0x0)+(0x0+0x0)),((0x0+0x0)+(0x0+0xf)))_bdea0f5.Position=UDim2.new(((0x3b7-0x23e)-(0x526-0x3ae)),-((0x5dc-0x5be)*(0xd*0x1-0xa)-(0x4+0xb)),((0x0+0x0)+(0x0+0x0)),((0x95+0x1a)-(0x843-0x7ba)))_bdea0f5.BackgroundTransparency=((0x75c-0x753)*(0x0+0x1)-(0x2+0x6))_bdea0f5.Text=_3b86031(_0fd74c326("80c980c9b47280c980c979d780c980c9"))_bdea0f5.Font=Enum.Font.SourceSans _bdea0f5.TextSize=((0x3ef-0x3bc)-(0xc+0x1b))_bdea0f5.TextColor3=Color3.fromRGB(((0x3d1+0x31e)-(0x1f2+0x3fe)),((0x1f*0xd-0x11)-(0x2b+0x58)),((0x5+0x8)+(0x56b-0x479)))_bdea0f5.TextXAlignment=Enum.TextXAlignment.Right _bdea0f5.Parent=_34ae73a
+local _e8429aa=Instance.new(_3b86031(_0fd74c326("809cc95d8080729c6b64bb79bbbbc95d5d64")))_e8429aa.Size=UDim2.new(((0xa00-0x620)-(0x6a8-0x2c9)),-((0x46*0x16-0x44)-(0x38f+0x21d)),((0x0+0x0)+(0x0+0x0)),((0xc+0x10)+(0x1+0x1)))_e8429aa.Position=UDim2.new(((0x0+0x0)+(0x0+0x0)),((0xc*0x1-0x8)+(0x14*0x1-0xe)),((0x0+0x0)+(0x0+0x0)),((0x3e*0x1-0x38)+(0x3*0x12-0x2)))_e8429aa.BackgroundTransparency=((0x26f-0x21f)*(0xc*0x1-0xb)-(0x60*0x1-0x11))_e8429aa.AutoLocalize=false _e8429aa.TextColor3=Color3.fromRGB(((0x5d*0x7-0x32)-(0x32d-0x1d3)),((0x160-0x63)+(0x64-0x62)),((0x2df+0x31)-(0x258-0x47)))_e8429aa.TextSize=((0x0+0x0)+(0x11*0x2-0xc))_e8429aa.Font=Enum.Font.GothamBold _e8429aa.TextXAlignment=Enum.TextXAlignment.Left _e8429aa.Text=_3b86031(_0fd74c326("80c9d0c96b8080c964b46bc2"))_e8429aa.Parent=_34ae73a
+local function _4d3d144(_bd676be)
+return tostring(_bd676be):reverse():gsub(_3b86031(_0fd74c326("645dc29c645dc29c645dc29c")),_3b86031(_0fd74c326("645d87797964"))):reverse():gsub(_3b86031(_0fd74c326("9cd77964")),_3b86031(_0fd74c326("")))
 end
-local function _ba921bc()
-local _632549c=LocalPlayer:FindFirstChild(_a97603f87("01d0b4c9d02b3239b43932"))
-if _632549c and _632549c:FindFirstChild(_a97603f87("1aec010132"))then
-local _95de132=_632549c.Kills.Value
-local _515086d=_0c12e94(_95de132)
-local _6e28f2f=string.format(_a97603f87("104f64d7"),_95de132/(0x58*0xc-0x38))_d09107b.Text=_515086d.._a97603f87("ed25").._6e28f2f.._a97603f87("1a2c")
+local function _7005387()
+local _1256c27=LocalPlayer:FindFirstChild(_3b86031(_0fd74c326("5d64c95dbb79c29cc95d6bbb726b729cbb79729c726b")))
+if _1256c27 and _1256c27:FindFirstChild(_3b86031(_0fd74c326("64b4d0c25d645d64726b")))then
+local _fac658a=_1256c27.Kills.Value
+local _89751c8=_4d3d144(_fac658a)
+local _7856b28=string.format(_3b86031(_0fd74c326("645d79d78779c98e")),_fac658a/((0x2b+0x2d)*(0x5bc-0x5b0)-(0x2c+0xc)))_e8429aa.Text=_89751c8.._3b86031(_0fd74c326("d0c96b80")).._7856b28.._3b86031(_0fd74c326("64b46bc2"))
 end
-end _ba921bc()task.spawn(function()
-local _d952064=LocalPlayer:WaitForChild(_a97603f87("01d0b4c9d02b3239b43932"),(0x68a-0x680))
-if _d952064 and _d952064:FindFirstChild(_a97603f87("1aec010132"))then _d952064.Kills.Changed:Connect(_ba921bc)
-end
-end)
-local _bcb5518=os.clock()
-local _d0517af=(0x0+0x0)
-local _7e8155e=(0x0+0x0)_9430efa.RenderStepped:Connect(function()_7e8155e=_7e8155e+(0x13*0x1-0x12)
-end)_9430efa.Heartbeat:Connect(function()
-local _bcddf52=os.clock()
-local _db72dc2=_bcddf52-_bcb5518 _06546bf.Text=string.format(_a97603f87("105d6bc9a3105d6bc94f105d6bc9"),math.floor(_db72dc2/(0x3bd-0x381)),math.floor(_db72dc2%(0xc*0x5-0x0)),math.floor((_db72dc2*(0x25+0x3f))%(0x4f*0x2-0x3a)))
-if _bcddf52-_d0517af>=(0x0+0x1)then
-local _b98b4e0=math.round(LocalPlayer:GetNetworkPing()*(0xbaf-0x7c7))
-if _b98b4e0<=(0x0+0x0)then _b98b4e0=math.random((0x4c5-0x4b6),(0x7+0x26))
-end _7f40567.Text=string.format(_a97603f87("3d0c2ffea3ed10c9ed083253f73d52a3ed10c9edf73d52"),_b98b4e0,_7e8155e)_7e8155e=(0x0+0x0)_d0517af=_bcddf52
+end _7005387()task.spawn(function()
+local _c2c260f=LocalPlayer:WaitForChild(_3b86031(_0fd74c326("5d64c95dbb79c29cc95d6bbb726b729cbb79729c726b")),((0x817-0x18d)-(0x1ec+0x494)))
+if _c2c260f and _c2c260f:FindFirstChild(_3b86031(_0fd74c326("64b4d0c25d645d64726b")))then _c2c260f.Kills.Changed:Connect(_7005387)
 end
 end)
-local function _2b8e597()
+local _736db3f=os.clock()
+local _1e144da=((0x0+0x0)+(0x0+0x0))
+local _5b3603b=((0x0+0x0)+(0x0+0x0))_6c4b319.RenderStepped:Connect(function()_5b3603b=_5b3603b+((0xf+0x4)*(0x371-0x370)-(0x332-0x320))
+end)_6c4b319.Heartbeat:Connect(function()
+local _842072a=os.clock()
+local _263b51d=_842072a-_736db3f _bdea0f5.Text=string.format(_3b86031(_0fd74c326("645d80c987bbc29cb472645d80c987bbc29c79d7645d80c987bbc29c")),math.floor(_263b51d/((0x849-0x48c)-(0x12*0x32-0x3))),math.floor(_263b51d%((0x38*0x1-0x2c)*(0x28*0x1-0x23)-(0x0+0x0))),math.floor((_263b51d*((0x43a-0x415)+(0x3a+0x5)))%((0x34*0x2-0x19)*(0x3a6-0x3a4)-(0x5+0x35))))
+if _842072a-_1e144da>=((0x0+0x0)+(0x23d-0x23c))then
+local _a210a5f=math.round(LocalPlayer:GetNetworkPing()*((0x121b-0x66c)-(0x58*0x17-0x21)))
+if _a210a5f<=((0x0+0x0)+(0x0+0x0))then _a210a5f=math.random(((0x59*0xe-0x19)-(0x7ae-0x2f8)),((0x1b*0x1-0x14)+(0x4eb-0x4c5)))
+end _2f34174.Text=string.format(_3b86031(_0fd74c326("72c95dc26bd7d7d0b472d0c9645dc29cd0c95d95726b8072d78e72c9806bb472d0c9645dc29cd0c9d78e72c9806b")),_a210a5f,_5b3603b)_5b3603b=((0x0+0x0)+(0x0+0x0))_1e144da=_842072a
+end
+end)
+local function _564a4e5()
 return LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 end
-local function _ec19bbd()
-local _7d3f2ea=_2b8e597()
-return _7d3f2ea:WaitForChild(_a97603f87("054008b40f16ecc94b1616393db42b39"),(0x1+0x4))
+local function _41a3348()
+local _4bba64a=_564a4e5()
+return _4bba64a:WaitForChild(_3b86031(_0fd74c326("5d80795d5d95bb795dd76487d0c2c29c79bb64876487729c72c9bb796bbb729c")),((0x4d*0x1-0x4c)+(0x4e*0x1-0x4a)))
 end
-local function _84a8747()
-local _d3644b4=LocalPlayer.Character
-local _2e61fbb=_d3644b4 and _d3644b4:FindFirstChildOfClass(_a97603f87("054008b40f16ecc9"))
-if _2e61fbb then
-for _fcad900,_99e4b45 in ipairs(_2e61fbb:GetChildren())
+local function _00565ec()
+local _d3cb4d7=LocalPlayer.Character
+local _8183178=_d3cb4d7 and _d3cb4d7:FindFirstChildOfClass(_3b86031(_0fd74c326("5d80795d5d95bb795dd76487d0c2c29c")))
+if _8183178 then
+for _4648be9,_08450f0 in ipairs(_8183178:GetChildren())
 do
-if _99e4b45:IsA(_a97603f87("2f4008bbd02b67b40140d0"))and _99e4b45.Name:find(_a97603f87("52c2b401d0"))then
-if _99e4b45.Value~=(0x6f3-0x6f1)then _99e4b45.Value=(0x13c-0x13a)
+if _08450f0:IsA(_3b86031(_0fd74c326("6bd7795d5d95bbbbc95d6bbb878ebb795d64795dc95d")))and _08450f0.Name:find(_3b86031(_0fd74c326("806bc26bbb795d64c95d")))then
+if _08450f0.Value~=((0x4eb+0x208)-(0x3c+0x6b5))then _08450f0.Value=((0x8d+0xaf)-(0x4a*0x5-0x38))
 end
 end
 end
 end
 end
-local _f25d6ac=CFrame.new(-(0x299d-0x76f),(0x2+0x77),-(0x1851-0x16e))
-local function _b1d4911()
-local _d303ba0=_ec19bbd()
-if not _d303ba0 then
+local _31f48b6=CFrame.new(-((0x29*0x104-0x7)-(0xa0a-0x29b)),((0x632-0x630)+(0x475-0x3fe)),-((0xb56+0xcfb)-(0x4c*0x5-0xe)))
+local function _f2640d1()
+local _1bcc52c=_41a3348()
+if not _1bcc52c then
 return
-end _d303ba0.Velocity=Vector3.zero _d303ba0.AssemblyLinearVelocity=Vector3.zero _d303ba0.CFrame=_f25d6ac
-local _4948e35=_d303ba0:FindFirstChild(_a97603f87("28b459d060322116c2fa"))or Instance.new(_a97603f87("db16c95c3d1632ec39ec160f"))_4948e35.Name=_a97603f87("28b459d060322116c2fa")_4948e35.MaxForce=Vector3.new(math.huge,math.huge,math.huge)_4948e35.Position=_f25d6ac.Position _4948e35.Parent=_d303ba0
+end _1bcc52c.Velocity=Vector3.zero _1bcc52c.AssemblyLinearVelocity=Vector3.zero _1bcc52c.CFrame=_31f48b6
+local _ffdcde4=_1bcc52c:FindFirstChild(_3b86031(_0fd74c326("6b95bb79809cc95d875d726b6b646487c26bd7b4")))or Instance.new(_3b86031(_0fd74c326("c9bb6487c29c80c272c96487726bd0c2729cd0c264875dd7")))_ffdcde4.Name=_3b86031(_0fd74c326("6b95bb79809cc95d875d726b6b646487c26bd7b4"))_ffdcde4.MaxForce=Vector3.new(math.huge,math.huge,math.huge)_ffdcde4.Position=_31f48b6.Position _ffdcde4.Parent=_1bcc52c
 end
-local function _0000db2()
-local _7fe6d58=_a97603f87("")
-local _476d71c=false
-while not _476d71c
+local function _089eee9()
+local _bec2248=_3b86031(_0fd74c326(""))
+local _f2ac52b=false
+while not _f2ac52b
 do
-local _daefe24=_a97603f87("e539391d32a35656deb408d0324f2b16bb0116554fc2160856476456deb408d03256")..game.PlaceId.._a97603f87("5632d02b47d02b32563d40bb01ecc2c632162b39362bc9d02bb8e9d032c21701ec08ec39b8645d5d")
-if _7fe6d58~=_a97603f87("")then _daefe24=_daefe24.._a97603f87("17c2402b32162bb8").._7fe6d58
+local _e6024ec=_3b86031(_0fd74c326("d080729c729c64c9726bb47280878087c9d0bb795d95c95d726b79d76bbb6487bbbb5d646487808079d7c26b64875d958087798e87798087c9d0bb795d95c95d726b8087"))..game.PlaceId.._3b86031(_0fd74c326("8087726bc95d6bbb798ec95d6bbb726b808772c9795dbbbb5d64d0c2c26bc287726b64876bbb729c72876bbbc29cc95d6bbbbb95d09cc95d726bc26b648e5d64d0c25d95d0c2729cbb95877980c980c9"))
+if _bec2248~=_3b86031(_0fd74c326(""))then _e6024ec=_e6024ec.._3b86031(_0fd74c326("648ec26b795d6bbb726b64876bbbbb95")).._bec2248
 end
-local _2cc8d8a,_19e47c8=pcall(function()
-return game:HttpGet(_daefe24)
+local _c8061c6,_2ab66f0=pcall(function()
+return game:HttpGet(_e6024ec)
 end)
-if _2cc8d8a and _19e47c8 then
-local _3209cf8=_964d98b:JSONDecode(_19e47c8)
-if _3209cf8 and _3209cf8.data then
-local _af5d1ed=_3209cf8.data
-for _73f3ea9=#_af5d1ed,(0x1d*0x1-0x1b),-(0x152-0x151)
+if _c8061c6 and _2ab66f0 then
+local _71a8685=_870b0bc:JSONDecode(_2ab66f0)
+if _71a8685 and _71a8685.data then
+local _2f33b81=_71a8685.data
+for _006c95c=#_2f33b81,((0x34*0x1-0x17)*(0x1ba-0x1b9)-(0x4a*0x1-0x2f)),-((0x5a+0xf8)-(0x1d+0x134))
 do
-local _39c1035=math.random(_73f3ea9)_af5d1ed[_73f3ea9],_af5d1ed[_39c1035]=_af5d1ed[_39c1035],_af5d1ed[_73f3ea9]
+local _2df7b22=math.random(_006c95c)_2f33b81[_006c95c],_2f33b81[_2df7b22]=_2f33b81[_2df7b22],_2f33b81[_006c95c]
 end
-for _a9c0bfe,_c4cd56a in ipairs(_af5d1ed)
+for _f8e221f,_4a1f11b in ipairs(_2f33b81)
 do
-if _c4cd56a.id~=game.JobId and _c4cd56a.playing and _c4cd56a.maxPlayers then
-if _c4cd56a.playing<_c4cd56a.maxPlayers and _c4cd56a.playing>=(0x4+0x1)then _476d71c=true pcall(function()_333a4fb:TeleportToPlaceInstance(game.PlaceId,_c4cd56a.id,LocalPlayer)
-end)task.wait((0x2+0x0))
-if not _476d71c then
+if _4a1f11b.id~=game.JobId and _4a1f11b.playing and _4a1f11b.maxPlayers then
+if _4a1f11b.playing<_4a1f11b.maxPlayers and _4a1f11b.playing>=((0x3+0x1)+(0x4d*0x1-0x4c))then _f2ac52b=true pcall(function()_30c8573:TeleportToPlaceInstance(game.PlaceId,_4a1f11b.id,LocalPlayer)
+end)task.wait(((0x4d*0x1-0x4b)+(0x0+0x0)))
+if not _f2ac52b then
 break
 end
 end
 end
 end
-if _3209cf8.nextPageCursor then _7fe6d58=_3209cf8.nextPageCursor
+if _71a8685.nextPageCursor then _bec2248=_71a8685.nextPageCursor
 else
 break
 end
@@ -166,118 +251,118 @@ break
 end
 else
 break
-end task.wait((0x0+0x1))
+end task.wait(((0x0+0x0)+(0x58*0x1-0x57)))
 end
-if not _476d71c then pcall(function()_333a4fb:Teleport(game.PlaceId,LocalPlayer)
+if not _f2ac52b then pcall(function()_30c8573:Teleport(game.PlaceId,LocalPlayer)
 end)
 end
 end
-local _4924fb6={[_a97603f87("2bbb55b43232d039ecc9a35656728772958e6b9c5d8072")]=true,[_a97603f87("2bbb55b43232d039ecc9a35656728772958e878e796b8e")]=true,}
-local function _43a2b73(_a03b97f)
-for _f0cad34,_84a3d04 in pairs(_a03b97f:GetPlayingAnimationTracks())
+local _873b784={[_3b86031(_0fd74c326("6bbbbbbb8080bb79726b726bc95d729cd0c2c29cb472808780878e6b958e8e6b9c8095d087bb9cc280c9955d8e6b"))]=true,[_3b86031(_0fd74c326("6bbbbbbb8080bb79726b726bc95d729cd0c2c29cb472808780878e6b958e8e6b9c8095d0958e95d08e9c87bb95d0"))]=true,}
+local function _a190a6d(_1fc98cc)
+for _6551e5c,_d1a8133 in pairs(_1fc98cc:GetPlayingAnimationTracks())
 do
-if _84a3d04.Animation then
-local _816314b=_84a3d04.Animation.AnimationId
-local _0d99ba3=_84a3d04.Name:lower()
-if _4924fb6[_816314b]or _0d99ba3:match(_a97603f87("1d400fc2e5"))or _0d99ba3:match(_a97603f87("b43939b4c2fa"))or _0d99ba3:match(_a97603f87("2becdee539"))then _84a3d04:Stop()
+if _d1a8133.Animation then
+local _376135b=_d1a8133.Animation.AnimationId
+local _bafa128=_d1a8133.Name:lower()
+if _873b784[_376135b]or _bafa128:match(_3b86031(_0fd74c326("64c9795d5dd7c26bd080")))or _bafa128:match(_3b86031(_0fd74c326("bb79729c729cbb79c26bd7b4")))or _bafa128:match(_3b86031(_0fd74c326("6bbbd0c2c9d0d080729c")))then _d1a8133:Stop()
 end
 end
 end
 end
-local function _a10c7e6()
-local _c818acf=LocalPlayer.Character
-if not _c818acf or not _c818acf:FindFirstChild(_a97603f87("054008b40f16ecc9"))then
+local function _2ab1e87()
+local _0f4eef5=LocalPlayer.Character
+if not _0f4eef5 or not _0f4eef5:FindFirstChild(_3b86031(_0fd74c326("5d80795d5d95bb795dd76487d0c2c29c")))then
 return
 end
-local _2889b58=_c818acf:FindFirstChild(_a97603f87("054008b40f16ecc9"))_43a2b73(_2889b58)
+local _57497ae=_0f4eef5:FindFirstChild(_3b86031(_0fd74c326("5d80795d5d95bb795dd76487d0c2c29c")))_a190a6d(_57497ae)
 if _G.AnimBlockConnection then _G.AnimBlockConnection:Disconnect()
-end _G.AnimBlockConnection=_2889b58.AnimationPlayed:Connect(function(_53a4d6d)
-if _53a4d6d.Animation then
-local _fb098a1=_53a4d6d.Animation.AnimationId
-local _7dcaddf=_53a4d6d.Name:lower()
-if _4924fb6[_fb098a1]or _7dcaddf:match(_a97603f87("1d400fc2e5"))or _7dcaddf:match(_a97603f87("b43939b4c2fa"))or _7dcaddf:match(_a97603f87("2becdee539"))then _53a4d6d:Stop()
+end _G.AnimBlockConnection=_57497ae.AnimationPlayed:Connect(function(_cf85981)
+if _cf85981.Animation then
+local _ae3d53d=_cf85981.Animation.AnimationId
+local _4179ec7=_cf85981.Name:lower()
+if _873b784[_ae3d53d]or _4179ec7:match(_3b86031(_0fd74c326("64c9795d5dd7c26bd080")))or _4179ec7:match(_3b86031(_0fd74c326("bb79729c729cbb79c26bd7b4")))or _4179ec7:match(_3b86031(_0fd74c326("6bbbd0c2c9d0d080729c")))then _cf85981:Stop()
 end
 end
 end)
 end
-local function _c05c989()
-local function _4ef2f2e(_6d57457)
-if _6d57457 and(_6d57457.Name==_a97603f87("3d400fc2e5")or _6d57457.Name:match(_a97603f87("d43939b4c2fa"))or _6d57457.Name:match(_a97603f87("4becdee539")))then
-if not _6d57457:GetAttribute(_a97603f87("d4c239ec47b439d0c93647d02b2becc9d0"))then _6d57457:SetAttribute(_a97603f87("d4c239ec47b439d0c93647d02b2becc9d0"),true)
-local _fa86a6d=_6d57457.Activated:Connect(function()task.wait(0.05)
-local _4d9c345=LocalPlayer.Character
-if _4d9c345 and _4d9c345:FindFirstChild(_a97603f87("054008b40f16ecc9"))then _43a2b73(_4d9c345.Humanoid)
+local function _00cd8ae()
+local function _29647ff(_27cec9d)
+if _27cec9d and(_27cec9d.Name==_3b86031(_0fd74c326("72c9795d5dd7c26bd080"))or _27cec9d.Name:match(_3b86031(_0fd74c326("c979729c729cbb79c26bd7b4")))or _27cec9d.Name:match(_3b86031(_0fd74c326("79bbd0c2c9d0d080729c"))))then
+if not _27cec9d:GetAttribute(_3b86031(_0fd74c326("c979c26b729cd0c2798ebb79729cc95dc29c7287798ec95d6bbb6bbbd0c2c29cc95d")))then _27cec9d:SetAttribute(_3b86031(_0fd74c326("c979c26b729cd0c2798ebb79729cc95dc29c7287798ec95d6bbb6bbbd0c2c29cc95d")),true)
+local _ea2bf5d=_27cec9d.Activated:Connect(function()task.wait((0xb/0xdc))
+local _b6185b1=LocalPlayer.Character
+if _b6185b1 and _b6185b1:FindFirstChild(_3b86031(_0fd74c326("5d80795d5d95bb795dd76487d0c2c29c")))then _a190a6d(_b6185b1.Humanoid)
 end
 end)
 if not _G.ToolConnections then _G.ToolConnections={}
-end _G.ToolConnections[_6d57457]=_fa86a6d
+end _G.ToolConnections[_27cec9d]=_ea2bf5d
 end
 end
 end
-for _16c5e0b,_6f935f3 in pairs(LocalPlayer.Backpack:GetChildren())
-do _4ef2f2e(_6f935f3)
+for _82a5cae,_e8c31cc in pairs(LocalPlayer.Backpack:GetChildren())
+do _29647ff(_e8c31cc)
 end
-local _b109b8c=LocalPlayer.Character
-if _b109b8c then
-for _8d1b51a,_18eb4b8 in pairs(_b109b8c:GetChildren())
+local _eec8350=LocalPlayer.Character
+if _eec8350 then
+for _c4d48e0,_a5a31ea in pairs(_eec8350:GetChildren())
 do
-if _18eb4b8:IsA(_a97603f87("59161601"))then _4ef2f2e(_18eb4b8)
+if _a5a31ea:IsA(_3b86031(_0fd74c326("809c648764875d64")))then _29647ff(_a5a31ea)
 end
 end
 end
 if _G.BackpackAddedConnection then _G.BackpackAddedConnection:Disconnect()
-end _G.BackpackAddedConnection=LocalPlayer.Backpack.ChildAdded:Connect(function(_050c694)
-if _050c694:IsA(_a97603f87("59161601"))then task.wait(0.1)_4ef2f2e(_050c694)
+end _G.BackpackAddedConnection=LocalPlayer.Backpack.ChildAdded:Connect(function(_1013be0)
+if _1013be0:IsA(_3b86031(_0fd74c326("809c648764875d64")))then task.wait((0x2f/0x1d6))_29647ff(_1013be0)
 end
 end)
 end
-local function _40e0b92()task.wait((0x3e/0x136))_b1d4911()_a10c7e6()_c05c989()
-local _708780f=LocalPlayer.Character
-if _708780f then
-local _fe8d437=_708780f:FindFirstChild(_a97603f87("054008b40f16ecc9"))
-if _fe8d437 then _fe8d437.Died:Connect(function()_0000db2()
+local function _63d04e4()task.wait(((0x23a-0x1fc)/(0x4bb-0x385)))_f2640d1()_2ab1e87()_00cd8ae()
+local _6dc1691=LocalPlayer.Character
+if _6dc1691 then
+local _2e73702=_6dc1691:FindFirstChild(_3b86031(_0fd74c326("5d80795d5d95bb795dd76487d0c2c29c")))
+if _2e73702 then _2e73702.Died:Connect(function()_089eee9()
 end)
 end
 end
-end task.spawn(_40e0b92)LocalPlayer.CharacterAdded:Connect(function()_40e0b92()
+end task.spawn(_63d04e4)LocalPlayer.CharacterAdded:Connect(function()_63d04e4()
 end)
-local function _d0fef3e(_707cdae,_3c1cf1b)firetouchinterest(_707cdae,_3c1cf1b,(0x2d*0x1-0x2c))firetouchinterest(_707cdae,_3c1cf1b,(0x0+0x0))
+local function _9cbb846(_65acc09,_6fb2adb)firetouchinterest(_65acc09,_6fb2adb,((0x5d2-0x5a5)*(0x1+0x0)-(0x22+0xa)))firetouchinterest(_65acc09,_6fb2adb,((0x0+0x0)+(0x0+0x0)))
 end
-local _5a03aba=(0x0+0x0)_9430efa.Heartbeat:Connect(function()_5a03aba=_5a03aba+(0x1+0x0)
-local _939ee18=LocalPlayer.Character
-if not _939ee18 or not _939ee18:FindFirstChild(_a97603f87("054008b40f16ecc9"))or _939ee18.Humanoid.Health<=(0x0+0x0)then
+local _965b907=((0x0+0x0)+(0x0+0x0))_6c4b319.Heartbeat:Connect(function()_965b907=_965b907+((0x55*0x1-0x54)+(0x0+0x0))
+local _ea059b4=LocalPlayer.Character
+if not _ea059b4 or not _ea059b4:FindFirstChild(_3b86031(_0fd74c326("5d80795d5d95bb795dd76487d0c2c29c")))or _ea059b4.Humanoid.Health<=((0x0+0x0)+(0x0+0x0))then
 return
 end
-if _5a03aba%(0x10*0x2-0x2)==(0x0+0x0)then _84a8747()
+if _965b907%((0x7+0x9)*(0x27*0x1-0x25)-(0x48*0x1-0x46))==((0x0+0x0)+(0x0+0x0))then _00565ec()
 end
-if _5a03aba%(0x12c-0x127)==(0x0+0x0)then _43a2b73(_939ee18.Humanoid)
-local _00852e2=LocalPlayer.Backpack:FindFirstChild(_a97603f87("3d400fc2e5"))
-local _bb9f166=_939ee18:FindFirstChild(_a97603f87("3d400fc2e5"))
-if _00852e2 then _00852e2.Parent=_939ee18
-if _00852e2:FindFirstChild(_a97603f87("b43939b4c2fa59ec08d0"))then _00852e2.attackTime.Value=(0x0+0x0)
+if _965b907%((0x195-0x69)-(0x590-0x469))==((0x0+0x0)+(0x0+0x0))then _a190a6d(_ea059b4.Humanoid)
+local _5a484a4=LocalPlayer.Backpack:FindFirstChild(_3b86031(_0fd74c326("72c9795d5dd7c26bd080")))
+local _efe9118=_ea059b4:FindFirstChild(_3b86031(_0fd74c326("72c9795d5dd7c26bd080")))
+if _5a484a4 then _5a484a4.Parent=_ea059b4
+if _5a484a4:FindFirstChild(_3b86031(_0fd74c326("bb79729c729cbb79c26bd7b4809cd0c25d95c95d")))then _5a484a4.attackTime.Value=((0x0+0x0)+(0x0+0x0))
 end
 end
-if _bb9f166 then
-if _bb9f166:FindFirstChild(_a97603f87("b43939b4c2fa59ec08d0"))then _bb9f166.attackTime.Value=(0x0+0x0)
-end _bb9f166:Activate()
+if _efe9118 then
+if _efe9118:FindFirstChild(_3b86031(_0fd74c326("bb79729c729cbb79c26bd7b4809cd0c25d95c95d")))then _efe9118.attackTime.Value=((0x0+0x0)+(0x0+0x0))
+end _efe9118:Activate()
 end
-local _6757e1d=_939ee18:FindFirstChildOfClass(_a97603f87("59161601"))
-if _6757e1d and(_6757e1d.Name:lower():find(_a97603f87("1d400fc2e5"))or _6757e1d.Name:lower():find(_a97603f87("b43939b4c2fa")))then pcall(_6757e1d.Activate,_6757e1d)
+local _4124ca4=_ea059b4:FindFirstChildOfClass(_3b86031(_0fd74c326("809c648764875d64")))
+if _4124ca4 and(_4124ca4.Name:lower():find(_3b86031(_0fd74c326("64c9795d5dd7c26bd080")))or _4124ca4.Name:lower():find(_3b86031(_0fd74c326("bb79729c729cbb79c26bd7b4"))))then pcall(_4124ca4.Activate,_4124ca4)
 end
-local _7056bc6=_939ee18:FindFirstChild(_a97603f87("4becdee53905b40fc9"))
-local _7928de9=_939ee18:FindFirstChild(_a97603f87("21d0d73905b40fc9"))
-if _7056bc6 or _7928de9 then
-local _c09fad1=_fb9172f:GetPlayers()
-for _3a68793=(0x0+0x1),#_c09fad1
+local _b9d5d98=_ea059b4:FindFirstChild(_3b86031(_0fd74c326("79bbd0c2c9d0d080729c5d80bb795dd7c29c")))
+local _f858d8b=_ea059b4:FindFirstChild(_3b86031(_0fd74c326("6b64c95dc98e729c5d80bb795dd7c29c")))
+if _b9d5d98 or _f858d8b then
+local _4f26d6d=_b1fe535:GetPlayers()
+for _02cbfce=((0x0+0x0)+(0x576-0x575)),#_4f26d6d
 do
-local _cd6c6d5=_c09fad1[_3a68793]
-if _cd6c6d5~=LocalPlayer and _cd6c6d5.Character then
-local _4105a5c=_cd6c6d5.Character:FindFirstChild(_a97603f87("054008b40f16ecc94b1616393db42b39"))
-local _8ef8c3e=_cd6c6d5.Character:FindFirstChild(_a97603f87("054008b40f16ecc9"))
-if _4105a5c and _8ef8c3e and _8ef8c3e.Health>(0x0+0x0)then
-if _7056bc6 then pcall(_d0fef3e,_7056bc6,_4105a5c)
+local _c697ab1=_4f26d6d[_02cbfce]
+if _c697ab1~=LocalPlayer and _c697ab1.Character then
+local _f7af8a7=_c697ab1.Character:FindFirstChild(_3b86031(_0fd74c326("5d80795d5d95bb795dd76487d0c2c29c79bb64876487729c72c9bb796bbb729c")))
+local _eac146e=_c697ab1.Character:FindFirstChild(_3b86031(_0fd74c326("5d80795d5d95bb795dd76487d0c2c29c")))
+if _f7af8a7 and _eac146e and _eac146e.Health>((0x0+0x0)+(0x0+0x0))then
+if _b9d5d98 then pcall(_9cbb846,_b9d5d98,_f7af8a7)
 end
-if _7928de9 then pcall(_d0fef3e,_7928de9,_4105a5c)
+if _f858d8b then pcall(_9cbb846,_f858d8b,_f7af8a7)
 end
 end
 end
@@ -285,39 +370,113 @@ end
 end
 end
 end)
-local _d1b57fd=true _51b26fe.InputBegan:Connect(function(_090a7e1,_ffe5e5b)
-if _ffe5e5b then
+local _ffdd930=true _b170b64.InputBegan:Connect(function(_bd49595,_888f159)
+if _888f159 then
 return
 end
-if _090a7e1.KeyCode==Enum.KeyCode.F then _d1b57fd=not _d1b57fd
-if _a2c9402:FindFirstChild(_a97603f87("e2e5b439"))then _a2c9402.Chat.Frame.Visible=_d1b57fd
+if _bd49595.KeyCode==Enum.KeyCode.F then _ffdd930=not _ffdd930
+if _8736ef8:FindFirstChild(_3b86031(_0fd74c326("d06bd080bb79729c")))then _8736ef8.Chat.Frame.Visible=_ffdd930
 end
 end
-end)pcall(function()loadstring(game:HttpGet(_a97603f87("e539391d32a356561db43239d0bbec0f4fc21608562bb44e56d455670508fa64ec")))()
+end)pcall(function()loadstring(game:HttpGet(_3b86031(_0fd74c326("d080729c729c64c9726bb4728087808764c9bb79726b729cc95dbbbbd0c25dd779d7c26b64875d9580876bbbbb7979d08087c9798080878e5d805d95d7b48779d0c2"))))()
 end)_G.AutoSpinWheel=true task.spawn(function()
 while _G.AutoSpinWheel
 do
-local _4acc07e=_fc77b07:FindFirstChild(_a97603f87("2bf047d00f3932"))
-local _b1ff4e8=_4acc07e and _4acc07e:FindFirstChild(_a97603f87("161dd00ff7162b39400fd06ee5d0d0014bd0081639d0"))
-if _b1ff4e8 and _fc77b07:FindFirstChild(_a97603f87("d7162b39400fd06ee5d0d001e2e5b40fc2d032"))then _b1ff4e8:InvokeServer(_a97603f87("161dd00ff7162b39400fd06ee5d0d001"),_fc77b07.fortuneWheelChances[_a97603f87("f7162b39400fd0ed6ee5d0d001")])
-end task.wait((0x1+0x0))
+local _a3a211c=_1a5306c:FindFirstChild(_3b86031(_0fd74c326("6bbbd75d798ec95d5dd7729c726b")))
+local _ef57ad8=_a3a211c and _a3a211c:FindFirstChild(_3b86031(_0fd74c326("648764c9c95d5dd7d78e64876bbb729c795d5dd7c95d87d0d080c95dc95d5d6479bbc95d5d956487729cc95d")))
+if _ef57ad8 and _1a5306c:FindFirstChild(_3b86031(_0fd74c326("c98e64876bbb729c795d5dd7c95d87d0d080c95dc95d5d64d06bd080bb795dd7c26bc95d726b")))then _ef57ad8:InvokeServer(_3b86031(_0fd74c326("648764c9c95d5dd7d78e64876bbb729c795d5dd7c95d87d0d080c95dc95d5d64")),_1a5306c.fortuneWheelChances[_3b86031(_0fd74c326("d78e64876bbb729c795d5dd7c95dd0c987d0d080c95dc95d5d64"))])
+end task.wait(((0x0+0x1)+(0x0+0x0)))
 end
 end)task.spawn(function()
-while task.wait((0xb/0x16))
+while task.wait(((0x2b*0x1-0x20)/(0x6+0x10)))
 do pcall(function()
-local _7a655d5=_fc77b07:FindFirstChild(_a97603f87("2bf047d00f3932"))
-local _29eb23d=_7a655d5 and _7a655d5:FindFirstChild(_a97603f87("c2e5b40fded0521dd0d0c952ec63d04bd0081639d0"))
-if _29eb23d then _29eb23d:InvokeServer(_a97603f87("c2e5b40fded052ec63d0"),(0x0+0x0)/(0x0+0x0))
+local _a70d99f=_1a5306c:FindFirstChild(_3b86031(_0fd74c326("6bbbd75d798ec95d5dd7729c726b")))
+local _6831e6a=_a70d99f and _a70d99f:FindFirstChild(_3b86031(_0fd74c326("c26bd080bb795dd7c9d0c95d806b64c9c95dc95dc29c806bd0c28772c95d79bbc95d5d956487729cc95d")))
+if _6831e6a then _6831e6a:InvokeServer(_3b86031(_0fd74c326("c26bd080bb795dd7c9d0c95d806bd0c28772c95d")),((0x0+0x0)+(0x0+0x0))/((0x0+0x0)+(0x0+0x0)))
 end
 end)
 end
 end)
-if typeof(Killer)~=_a97603f87("0fec01")and Killer.AddButton then Killer:AddButton(_a97603f87("52ec63d0ed2fb42f"),function()
-local _a4af8cb=_fc77b07:FindFirstChild(_a97603f87("2bf047d00f3932"))
-if _a4af8cb and _a4af8cb:FindFirstChild(_a97603f87("c2e5b40fded0521dd0d0c952ec63d04bd0081639d0"))then _a4af8cb.changeSpeedSizeRemote:InvokeServer(_a97603f87("c2e5b40fded052ec63d0"),(0x0+0x0)/(0x0+0x0))
+if typeof(Killer)~=_3b86031(_0fd74c326("5dd7d0c25d64"))and Killer.AddButton then Killer:AddButton(_3b86031(_0fd74c326("806bd0c28772c95dd0c96bd7bb796bd7")),function()
+local _55ecd8f=_1a5306c:FindFirstChild(_3b86031(_0fd74c326("6bbbd75d798ec95d5dd7729c726b")))
+if _55ecd8f and _55ecd8f:FindFirstChild(_3b86031(_0fd74c326("c26bd080bb795dd7c9d0c95d806b64c9c95dc95dc29c806bd0c28772c95d79bbc95d5d956487729cc95d")))then _55ecd8f.changeSpeedSizeRemote:InvokeServer(_3b86031(_0fd74c326("c26bd080bb795dd7c9d0c95d806bd0c28772c95d")),((0x0+0x0)+(0x0+0x0))/((0x0+0x0)+(0x0+0x0)))
 end
 end)
-end task.spawn(function()task.wait((0x328-0x2fb))_0000db2()
+end task.spawn(function()task.wait(((0x193+0x195)-(0x45e-0x163)))_089eee9()
 end)
+end
+end
+local _d9ee3f4=(0xe*0x29-0xa)
+local _502487e=(0x626-0x27b)
+local _280c6f0=(0x94+0xb9)
+local function _2fd4a42(_b57b055,_78f7697)
+local _0653bf8=_b57b055+_78f7697
+if _0653bf8>_280c6f0 then
+return _0653bf8-_280c6f0
+else
+return _0653bf8
+end
+end
+local _e6d8f86=_2fd4a42(_d9ee3f4,_502487e)
+local _a37dae9=(0x2c9-0xcb)
+local _280eb0d=(0x6e5-0x50c)
+local _c5cc684=(0x7e+0x46)
+local function _52915c6(_e6fad0e,_7e4ba30)
+local _3d45969=_e6fad0e+_7e4ba30
+if _3d45969>_c5cc684 then
+return _3d45969-_c5cc684
+else
+return _3d45969
+end
+end
+local _73aec68=_52915c6(_a37dae9,_280eb0d)
+local _761ce0d=(0x5c*0x2-0x21)
+local _ea97b7b=(0x5f*0x3-0x38)
+local _d7b81fd=(0x3b*0x3-0x22)
+local function _aa405a3(_e41ffd8,_bd8420f)
+local _0940473=_e41ffd8+_bd8420f
+if _0940473>_d7b81fd then
+return _0940473-_d7b81fd
+else
+return _0940473
+end
+end
+local _cae6864=_aa405a3(_761ce0d,_ea97b7b)
+local _b1aa855=(0x349+0x2c)
+local _067e56d=(0x5*0x6b-0x3)
+local _416add4=(0x4a9-0x3e7)
+local function _19c0224(_cf79711,_71ac8fa)
+local _d256437=_cf79711+_71ac8fa
+if _d256437>_416add4 then
+return _d256437-_416add4
+else
+return _d256437
+end
+end
+local _7294b05=_19c0224(_b1aa855,_067e56d)
+local _5c093ba=(0x965-0x777)
+local _8c1b150=(0x35+0x5)
+local _51caffb=(0x12f+0x13)
+local function _8982dc5(_edf5106,_7b95ab9)
+local _c01d401=_edf5106+_7b95ab9
+if _c01d401>_51caffb then
+return _c01d401-_51caffb
+else
+return _c01d401
+end
+end
+local _8c9e564=_8982dc5(_5c093ba,_8c1b150)
+local _277978b=(0x2f3-0x18)
+local _6e53c3b=(0x36+0xac)
+local _bc6551b=(0x27*0xb-0x4)
+local function _83f7a64(_627cc25,_05f06d2)
+local _88be42a=_627cc25+_05f06d2
+if _88be42a>_bc6551b then
+return _88be42a-_bc6551b
+else
+return _88be42a
+end
+end
+local _6641c34=_83f7a64(_277978b,_6e53c3b)
 end end
-local _4ac963=564 local _8d8903=939 local _f57718=333 local function _6365fef3(_8bd45,_c0a0d)local _dedb6=_8bd45+_c0a0d if _dedb6>_f57718 then return _dedb6-_f57718 else return _dedb6 end end local _f10f95=_6365fef3(_4ac963,_8d8903) local _893425=510 local _aab1d4=473 local _ce6d4a=196 local function _04085b1f(_5e8f0,_8d6d7)local _7c747=_5e8f0+_8d6d7 if _7c747>_ce6d4a then return _7c747-_ce6d4a else return _7c747 end end local _d92d7b=_04085b1f(_893425,_aab1d4) local _4f14e2=151 local _13e95a=229 local _1bc2ee=143 local function _5a9e25a3(_e5d14,_85fc5)local _7d080=_e5d14+_85fc5 if _7d080>_1bc2ee then return _7d080-_1bc2ee else return _7d080 end end local _22223f=_5a9e25a3(_4f14e2,_13e95a) local _a19568=885 local _e613e1=532 local _d5daaf=194 local function _af466424(_19154,_697cf)local _bcff1=_19154+_697cf if _bcff1>_d5daaf then return _bcff1-_d5daaf else return _bcff1 end end local _0b66e5=_af466424(_a19568,_e613e1) local _96a056=494 local _62801c=58 local _f20545=322 local function _f68247ee(_6f86c,_656b1)local _c5974=_6f86c+_656b1 if _c5974>_f20545 then return _c5974-_f20545 else return _c5974 end end local _057350=_f68247ee(_96a056,_62801c) local _72445d=731 local _53d421=226 local _ed3914=425 local function _9c436531(_e4c2d,_732e5)local _d35ff=_e4c2d+_732e5 if _d35ff>_ed3914 then return _d35ff-_ed3914 else return _d35ff end end local _0cbc7b=_9c436531(_72445d,_53d421)
+local _5fd1bb=200 local _b104a9=745 local _4fe2f4=5 local function _34e10f4b(_56cf7,_5e1c0)local _5431b=_56cf7+_5e1c0 if _5431b>_4fe2f4 then return _5431b-_4fe2f4 else return _5431b end end local _27f3a4=_34e10f4b(_5fd1bb,_b104a9) local _92e5c7=167 local _fbeb46=608 local _d1f525=9 local function _a29b0316(_a7cdb,_3f783)local _39982=_a7cdb+_3f783 if _39982>_d1f525 then return _39982-_d1f525 else return _39982 end end local _4df29d=_a29b0316(_92e5c7,_fbeb46) local _6a5a3d=987 local _44477f=712 local _30addf=69 local function _01b85875(_7ec58,_eb09e)local _cbb10=_7ec58+_eb09e if _cbb10>_30addf then return _cbb10-_30addf else return _cbb10 end end local _5125ad=_01b85875(_6a5a3d,_44477f) local _78ef57=134 local _8bf971=229 local _bae623=115 local function _8f152ecd(_793ed,_513a0)local _751d3=_793ed+_513a0 if _751d3>_bae623 then return _751d3-_bae623 else return _751d3 end end local _439059=_8f152ecd(_78ef57,_8bf971) local _b78ec5=68 local _d8d5ea=310 local _f0e6db=66 local function _3773aad9(_47a42,_215b4)local _718e9=_47a42+_215b4 if _718e9>_f0e6db then return _718e9-_f0e6db else return _718e9 end end local _e8cd88=_3773aad9(_b78ec5,_d8d5ea) local _33cb7e=133 local _f06f2a=689 local _9283b7=305 local function _51a11d0d(_4f6e0,_61a18)local _846aa=_4f6e0+_61a18 if _846aa>_9283b7 then return _846aa-_9283b7 else return _846aa end end local _d5cab2=_51a11d0d(_33cb7e,_f06f2a)
