@@ -1,2 +1,529 @@
--- Apex Fuscator | Apex Scripters
-local Sw,bhND_=string.char,string.byte;local function oxsQ(WUpj)local vehVMTvawfD="" for fUvh=0x1,#WUpj,0x2 do vehVMTvawfD=vehVMTvawfD..Sw((bhND_(WUpj,fUvh)-0x34)*0x2D+bhND_(WUpj,fUvh+0x1)-0x34)end return vehVMTvawfD end local Iqb,KPxYu=string.char,string.byte;local function _fGc(KNULDx)local _VK=oxsQ("")for yOFccLAu=0x1,#KNULDx,0x2 do _VK=_VK..Iqb((KPxYu(KNULDx,yOFccLAu)-0x34)*0x2D+KPxYu(KNULDx,yOFccLAu+0x1)-0x34)end return _VK end local function _zab(_qY)local _DrG_O=0 for GZzhUctUo=0x1,#_qY do _DrG_O=_DrG_O+_qY[GZzhUctUo]end return _DrG_O/#_qY end local OcBV={7.5,8.0,9.5}print(_fGc(oxsQ("5<5[5@5C5=5E5=5J5=5B5<5H")),_zab(OcBV))
+local CoreGui = game:GetService("CoreGui")
+local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local Stats = game:GetService("Stats")
+local Workspace = game:GetService("Workspace")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local TweenService = game:GetService("TweenService")
+
+local LocalPlayer = Players.LocalPlayer
+local guiName = "ApexScripters_GUI_Pro"
+
+if CoreGui:FindFirstChild(guiName) then
+    CoreGui[guiName]:Destroy()
+end
+
+-- Proteção contra Kick
+pcall(function()
+    local mt = getrawmetatable(game)
+    local oldNamecall = mt.__namecall
+    if setreadonly then setreadonly(mt, false) end
+    mt.__namecall = newcclosure(function(self, ...)
+        local method = getnamecallmethod()
+        if not checkcaller() and (method == "Kick" or method == "kick") then
+            return nil
+        end
+        return oldNamecall(self, ...)
+    end)
+    if setreadonly then setreadonly(mt, true) end
+end)
+
+-- ==========================================
+-- INTERFACE GRÁFICA MODERNA
+-- ==========================================
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = guiName
+ScreenGui.Parent = CoreGui
+ScreenGui.ResetOnSpawn = false
+
+-- HUD FPS/PING
+local HudFrame = Instance.new("Frame", ScreenGui)
+HudFrame.Size = UDim2.new(0, 150, 0, 32)
+HudFrame.Position = UDim2.new(1, -160, 0, 15)
+HudFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+HudFrame.BackgroundTransparency = 0.2
+HudFrame.BorderSizePixel = 0
+Instance.new("UICorner", HudFrame).CornerRadius = UDim.new(0, 6)
+
+local HudGlow = Instance.new("UIStroke", HudFrame)
+HudGlow.Color = Color3.fromRGB(0, 255, 200)
+HudGlow.Thickness = 1.5
+
+local StatsText = Instance.new("TextLabel", HudFrame)
+StatsText.Size = UDim2.new(1, 0, 1, 0)
+StatsText.BackgroundTransparency = 1
+StatsText.Text = "FPS: ... | Ping: ..."
+StatsText.TextColor3 = Color3.fromRGB(255, 255, 255)
+StatsText.Font = Enum.Font.GothamMedium
+StatsText.TextSize = 12
+
+-- MENU PRINCIPAL
+local Main = Instance.new("Frame", ScreenGui)
+Main.Size = UDim2.new(0, 360, 0, 180)
+Main.Position = UDim2.new(0.5, -180, 0.5, -90)
+Main.BackgroundColor3 = Color3.fromRGB(15, 15, 20)
+Main.BackgroundTransparency = 0.1
+Main.BorderSizePixel = 0
+Instance.new("UICorner", Main).CornerRadius = UDim.new(0, 12)
+
+local MainStroke = Instance.new("UIStroke", Main)
+MainStroke.Color = Color3.fromRGB(45, 45, 55)
+MainStroke.Thickness = 2
+
+local Top = Instance.new("Frame", Main)
+Top.Size = UDim2.new(1, 0, 0, 45)
+Top.BackgroundColor3 = Color3.fromRGB(22, 22, 30)
+Top.BorderSizePixel = 0
+Instance.new("UICorner", Top).CornerRadius = UDim.new(0, 12)
+
+local TopFix = Instance.new("Frame", Top)
+TopFix.Size = UDim2.new(1, 0, 0, 10)
+TopFix.Position = UDim2.new(0, 0, 1, -10)
+TopFix.BackgroundColor3 = Color3.fromRGB(22, 22, 30)
+TopFix.BorderSizePixel = 0
+
+local Title = Instance.new("TextLabel", Top)
+Title.Size = UDim2.new(1, -60, 1, 0)
+Title.Position = UDim2.new(0, 15, 0, 0)
+Title.BackgroundTransparency = 1
+Title.Text = "APEX SCRIPTERS"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextXAlignment = Enum.TextXAlignment.Left
+Title.Font = Enum.Font.GothamBlack
+Title.TextSize = 14
+
+local MinBtn = Instance.new("TextButton", Top)
+MinBtn.Size = UDim2.new(0, 30, 0, 30)
+MinBtn.Position = UDim2.new(1, -40, 0, 7)
+MinBtn.BackgroundColor3 = Color3.fromRGB(35, 35, 45)
+MinBtn.Text = "-"
+MinBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+MinBtn.Font = Enum.Font.GothamBold
+MinBtn.TextSize = 18
+Instance.new("UICorner", MinBtn).CornerRadius = UDim.new(0, 6)
+
+local Content = Instance.new("Frame", Main)
+Content.Size = UDim2.new(1, 0, 1, -45)
+Content.Position = UDim2.new(0, 0, 0, 45)
+Content.BackgroundTransparency = 1
+
+local AutoPunchBtn = Instance.new("TextButton", Content)
+AutoPunchBtn.Size = UDim2.new(1, -30, 0, 42)
+AutoPunchBtn.Position = UDim2.new(0, 15, 0, 15)
+AutoPunchBtn.BackgroundColor3 = Color3.fromRGB(30, 30, 40)
+AutoPunchBtn.Text = "AUTO PUNCH: DESLIGADO"
+AutoPunchBtn.TextColor3 = Color3.fromRGB(200, 200, 200)
+AutoPunchBtn.Font = Enum.Font.GothamBold
+AutoPunchBtn.TextSize = 12
+Instance.new("UICorner", AutoPunchBtn).CornerRadius = UDim.new(0, 8)
+local AutoStroke = Instance.new("UIStroke", AutoPunchBtn)
+AutoStroke.Color = Color3.fromRGB(255, 80, 80)
+AutoStroke.Thickness = 1.5
+
+local TargetBox = Instance.new("TextBox", Content)
+TargetBox.Size = UDim2.new(1, -150, 0, 42)
+TargetBox.Position = UDim2.new(0, 15, 0, 70)
+TargetBox.BackgroundColor3 = Color3.fromRGB(25, 25, 32)
+TargetBox.Text = ""
+TargetBox.PlaceholderText = " Nome do Alvo..."
+TargetBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TargetBox.Font = Enum.Font.Gotham
+TargetBox.TextSize = 12
+Instance.new("UICorner", TargetBox).CornerRadius = UDim.new(0, 8)
+
+local PunchTargetBtn = Instance.new("TextButton", Content)
+PunchTargetBtn.Size = UDim2.new(0, 115, 0, 42)
+PunchTargetBtn.Position = UDim2.new(1, -130, 0, 70)
+PunchTargetBtn.BackgroundColor3 = Color3.fromRGB(0, 150, 255)
+PunchTargetBtn.Text = "Focar Alvo"
+PunchTargetBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+PunchTargetBtn.Font = Enum.Font.GothamBold
+PunchTargetBtn.TextSize = 12
+Instance.new("UICorner", PunchTargetBtn).CornerRadius = UDim.new(0, 8)
+
+-- ==========================================
+-- FUNÇÕES DA GUI (ARRASTAR / STATUS)
+-- ==========================================
+local function MakeDraggable(frame, dragPart)
+    local dragging, dragInput, dragStart, startPos
+    dragPart.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true; dragStart = input.Position; startPos = frame.Position
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then dragging = false end
+            end)
+        end
+    end)
+    dragPart.InputChanged:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+            dragInput = input
+        end
+    end)
+    UserInputService.InputChanged:Connect(function(input)
+        if input == dragInput and dragging then
+            local delta = input.Position - dragStart
+            frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+        end
+    end)
+end
+MakeDraggable(Main, Top)
+MakeDraggable(HudFrame, HudFrame)
+
+local isMinimized = false
+MinBtn.MouseButton1Click:Connect(function()
+    isMinimized = not isMinimized
+    if isMinimized then
+        Main:TweenSize(UDim2.new(0, 360, 0, 45), "Out", "Quad", 0.3, true)
+        MinBtn.Text = "+"
+        Content.Visible = false
+    else
+        Main:TweenSize(UDim2.new(0, 360, 0, 180), "Out", "Quad", 0.3, true)
+        MinBtn.Text = "-"
+        Content.Visible = true
+    end
+end)
+
+local frameCount, lastUpdate = 0, tick()
+RunService.RenderStepped:Connect(function()
+    frameCount = frameCount + 1
+    local now = tick()
+    if now - lastUpdate >= 1 then
+        local ping = 0
+        pcall(function() ping = math.floor(Stats.Network.ServerStatsItem["Data Ping"]:GetValue()) end)
+        StatsText.Text = string.format("FPS: %d  |  PING: %dms", frameCount, ping)
+        frameCount = 0
+        lastUpdate = now
+    end
+end)
+
+-- ==========================================
+-- MOTOR PRINCIPAL & LÓGICA DE COMBATE
+-- ==========================================
+local FLIGHT_SPEED = 50 
+local UNDERGROUND_Y = -5 -- Altura subterrânea segura (longe do void)
+
+local autoPunchActive = false
+local engineRunning = false
+local priorityTarget = nil
+local noclipConnection = nil
+local currentTween = nil
+local antiSeatConnection = nil
+
+local function ToggleNoclip(state)
+    if state then
+        if not noclipConnection then
+            noclipConnection = RunService.Stepped:Connect(function()
+                if LocalPlayer.Character then
+                    for _, part in pairs(LocalPlayer.Character:GetDescendants()) do
+                        if part:IsA("BasePart") then part.CanCollide = false end
+                    end
+                end
+            end)
+        end
+    else
+        if noclipConnection then noclipConnection:Disconnect(); noclipConnection = nil end
+    end
+end
+
+-- Impedir que o jogador sente em carros
+local function setupAntiSeat()
+    if antiSeatConnection then antiSeatConnection:Disconnect() end
+    if LocalPlayer.Character then
+        local hum = LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+        if hum then
+            antiSeatConnection = hum.Seated:Connect(function(isSeated)
+                if isSeated then
+                    hum.Sit = false
+                end
+            end)
+        end
+    end
+end
+
+-- Agachamento remoto (sem afetar a tela do usuário)
+local function setRemoteCrouch(state)
+    pcall(function()
+        local remotesFolder = ReplicatedStorage:FindFirstChild("Remotes")
+        local crouchRemote = ReplicatedStorage:FindFirstChild("Crouch") or (remotesFolder and remotesFolder:FindFirstChild("Crouch"))
+        if crouchRemote then
+            crouchRemote:FireServer(state)
+        end
+    end)
+end
+
+-- Verifica se o alvo está em um carro
+local function isInCar(plr)
+    if not plr or not plr.Character then return false end
+    local hum = plr.Character:FindFirstChild("Humanoid")
+    if hum and (hum.Sit or (hum.SeatPart and hum.SeatPart:IsA("VehicleSeat"))) then
+        return true
+    end
+    return false
+end
+
+-- Verifica se o alvo está pulando
+local function isJumping(hum)
+    if not hum then return false end
+    local state = hum:GetState()
+    return state == Enum.HumanoidStateType.Jumping or state == Enum.HumanoidStateType.Freefall or hum.FloorMaterial == Enum.Material.Air
+end
+
+local function isValidTarget(plr)
+    if not plr or not plr.Character then return false end
+    local hum = plr.Character:FindFirstChild("Humanoid")
+    if not hum or hum.Health <= 0 then return false end 
+    if plr.Character:FindFirstChildOfClass("ForceField") then return false end
+    if isInCar(plr) then return false end 
+    return true
+end
+
+local function getClosestTarget(pos)
+    local bestTarget = nil
+    local minDist = math.huge
+    for _, p in pairs(Players:GetPlayers()) do
+        if p ~= LocalPlayer and isValidTarget(p) then
+            local pHrp = p.Character:FindFirstChild("HumanoidRootPart")
+            if pHrp then
+                local dist = (pHrp.Position - pos).Magnitude
+                if dist < minDist then
+                    minDist = dist
+                    bestTarget = p
+                end
+            end
+        end
+    end
+    return bestTarget
+end
+
+-- Função de Soco via Remote exato do Prison Life
+local function doPunch(target)
+    pcall(function()
+        local meleeEvent = ReplicatedStorage:FindFirstChild("meleeEvent") or (ReplicatedStorage:FindFirstChild("Remotes") and ReplicatedStorage.Remotes:FindFirstChild("meleeEvent"))
+        if meleeEvent and target and target.Character then
+            meleeEvent:FireServer(target, 1, 1)
+        end
+    end)
+end
+
+-- Sistema de Tween por Velocidade (Sem Teleporte)
+local function tweenTo(proxy, destCFrame)
+    if currentTween then currentTween:Cancel() end
+    local dist = (proxy.Position - destCFrame.Position).Magnitude
+    local timeVal = dist / FLIGHT_SPEED
+    if timeVal < 0.05 then timeVal = 0.05 end
+
+    local tweenInfo = TweenInfo.new(timeVal, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+    currentTween = TweenService:Create(proxy, tweenInfo, {CFrame = destCFrame})
+    currentTween:Play()
+    
+    local startTime = tick()
+    while currentTween.PlaybackState == Enum.PlaybackState.Playing and (tick() - startTime) < (timeVal + 0.1) do
+        RunService.Heartbeat:Wait()
+    end
+end
+
+local function startEngine()
+    if engineRunning then return end
+    engineRunning = true
+    
+    task.spawn(function()
+        local char = LocalPlayer.Character
+        local hrp = char and char:FindFirstChild("HumanoidRootPart")
+        if not hrp then engineRunning = false return end
+
+        local originalPos = hrp.Position
+        ToggleNoclip(true)
+        setupAntiSeat()
+        setRemoteCrouch(true)
+        hrp.Anchored = false 
+
+        local proxy = Instance.new("Part")
+        proxy.Anchored = true
+        proxy.Transparency = 1
+        proxy.CanCollide = false
+        proxy.CFrame = hrp.CFrame
+        proxy.Parent = Workspace
+
+        -- Placa Maior e Sólida (12x12)
+        local safePlate = Instance.new("Part")
+        safePlate.Size = Vector3.new(12, 0.2, 12) 
+        safePlate.Transparency = 0.3
+        safePlate.Color = Color3.fromRGB(255, 50, 50)
+        safePlate.Material = Enum.Material.Neon
+        safePlate.CanCollide = true 
+        safePlate.Anchored = true
+        safePlate.Parent = Workspace 
+
+        local updateConnection = RunService.Heartbeat:Connect(function()
+            if hrp and proxy then
+                hrp.CFrame = proxy.CFrame
+                hrp.AssemblyLinearVelocity = Vector3.new(0,0,0)
+                if safePlate and safePlate.Parent then
+                    safePlate.CFrame = proxy.CFrame * CFrame.new(0, -3.1, 0)
+                end
+            end
+        end)
+
+        -- PASSO 1: Afunda suavemente até a camada UNDERGROUND_Y (-5)
+        local subPos = Vector3.new(originalPos.X, UNDERGROUND_Y, originalPos.Z)
+        tweenTo(proxy, CFrame.new(subPos))
+
+        -- PASSO 2: Loop Principal de Perseguição e Combate
+        while autoPunchActive or priorityTarget do
+            local currentTarget = priorityTarget
+            
+            if not currentTarget or not isValidTarget(currentTarget) then
+                priorityTarget = nil
+                currentTarget = getClosestTarget(proxy.Position)
+            end
+
+            if currentTarget then
+                local tChar = currentTarget.Character
+                local tHrp = tChar and tChar:FindFirstChild("HumanoidRootPart")
+                local tHum = tChar and tChar:FindFirstChild("Humanoid")
+                
+                if tHrp and tHum then
+                    -- Vai debaixo da terra até o X e Z do alvo
+                    while (autoPunchActive or priorityTarget) and isValidTarget(currentTarget) do
+                        if isInCar(currentTarget) then break end 
+                        
+                        local dest = Vector3.new(tHrp.Position.X, UNDERGROUND_Y, tHrp.Position.Z)
+                        local dist = (proxy.Position - dest).Magnitude
+                        if dist < 3 then break end 
+                        
+                        if not priorityTarget then
+                            local closer = getClosestTarget(proxy.Position)
+                            if closer and closer ~= currentTarget then
+                                local cHrp = closer.Character:FindFirstChild("HumanoidRootPart")
+                                if cHrp then
+                                    local cDist = (Vector3.new(cHrp.Position.X, UNDERGROUND_Y, cHrp.Position.Z) - proxy.Position).Magnitude
+                                    if cDist < dist - 15 then 
+                                        currentTarget = closer
+                                        tChar = currentTarget.Character
+                                        tHrp = tChar:FindFirstChild("HumanoidRootPart")
+                                        tHum = tChar:FindFirstChild("Humanoid")
+                                    end
+                                end
+                            end
+                        end
+
+                        tweenTo(proxy, CFrame.new(dest))
+                    end
+
+                    -- MOMENTO DO SOCO: Fica na altura correta logo abaixo do alvo
+                    if isValidTarget(currentTarget) and not isInCar(currentTarget) then
+                        while (autoPunchActive or priorityTarget) and isValidTarget(currentTarget) and not isInCar(currentTarget) do
+                            if not tHrp or not tHrp.Parent or not tHum or tHum.Health <= 0 then break end
+                            
+                            -- Se o alvo pular, travamos na última posição e altura
+                            if not isJumping(tHum) then
+                                local targetFeetY = tHrp.Position.Y - 3.2
+                                local alignPos = Vector3.new(tHrp.Position.X, targetFeetY, tHrp.Position.Z)
+                                proxy.CFrame = CFrame.new(alignPos)
+                            end
+                            
+                            doPunch(currentTarget)
+                            task.wait(0.08)
+                        end
+                        
+                        if priorityTarget == currentTarget then priorityTarget = nil end
+                    end
+                end
+            else
+                -- Caso não tenha nenhum alvo, fica seguro na posição inicial subterrânea aguardando
+                local homeSub = Vector3.new(originalPos.X, UNDERGROUND_Y, originalPos.Z)
+                if (proxy.Position - homeSub).Magnitude > 2 then
+                    tweenTo(proxy, CFrame.new(homeSub))
+                else
+                    task.wait(0.3)
+                end
+            end
+        end
+
+        -- ==================================================
+        -- DESLIGOU: RETORNO SUAVE PARA A POSIÇÃO ORIGINAL
+        -- ==================================================
+        if currentTween then currentTween:Cancel() end
+        setRemoteCrouch(false)
+        
+        -- 1. Vai por baixo até a vertical da posição original
+        local returnSubPos = Vector3.new(originalPos.X, UNDERGROUND_Y, originalPos.Z)
+        tweenTo(proxy, CFrame.new(returnSubPos))
+        
+        -- 2. Sobe suavemente para a posição exata onde você ativou
+        tweenTo(proxy, CFrame.new(originalPos))
+
+        -- Limpeza
+        updateConnection:Disconnect()
+        if currentTween then currentTween:Cancel() end
+        if antiSeatConnection then antiSeatConnection:Disconnect() end
+        proxy:Destroy()
+        safePlate:Destroy()
+        hrp.Anchored = false
+        ToggleNoclip(false)
+        engineRunning = false
+    end)
+end
+
+-- ==========================================
+-- VOLTAR IMEDIATAMENTE APÓS MORRER
+-- ==========================================
+LocalPlayer.CharacterAdded:Connect(function(char)
+    setupAntiSeat()
+    if autoPunchActive then
+        char:WaitForChild("HumanoidRootPart")
+        task.wait(0.1)
+        if autoPunchActive and not engineRunning then
+            startEngine()
+        end
+    end
+end)
+
+-- ==========================================
+-- EVENTOS DOS BOTÕES
+-- ==========================================
+AutoPunchBtn.MouseButton1Click:Connect(function()
+    autoPunchActive = not autoPunchActive
+    if autoPunchActive then
+        AutoPunchBtn.Text = "AUTO PUNCH: LIGADO"
+        AutoStroke.Color = Color3.fromRGB(80, 255, 80)
+        AutoPunchBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+        if not engineRunning then startEngine() end
+    else
+        AutoPunchBtn.Text = "AUTO PUNCH: DESLIGADO"
+        AutoStroke.Color = Color3.fromRGB(255, 80, 80)
+        AutoPunchBtn.TextColor3 = Color3.fromRGB(200, 200, 200)
+    end
+end)
+
+PunchTargetBtn.MouseButton1Click:Connect(function()
+    local targetName = string.lower(TargetBox.Text)
+    if targetName == "" then return end
+    for _, plr in pairs(Players:GetPlayers()) do
+        if string.find(string.lower(plr.Name), targetName) or string.find(string.lower(plr.DisplayName), targetName) then
+            priorityTarget = plr
+            if not engineRunning then startEngine() end
+            TargetBox.Text = ""
+            break 
+        end
+    end
+end)
+
+local Mouse = LocalPlayer:GetMouse()
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if gameProcessed then return end 
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        local target = Mouse.Target
+        if target then
+            local model = target:FindFirstAncestorOfClass("Model")
+            if model then
+                local player = Players:GetPlayerFromCharacter(model)
+                if player and player ~= LocalPlayer then
+                    priorityTarget = player
+                    if not engineRunning then startEngine() end
+                end
+            end
+        end
+    end
+end)
